@@ -21,7 +21,7 @@ void recibir_respuesta(SOCKET sock) {
         buffer[bytesRec] = '\0'; // Null-terminate string
         printf("Respuesta del servidor: %s\n", buffer);
     } else if (bytesRec == 0) {
-        printf("ConexiÃ³n cerrada por el servidor.\n");
+        printf("Conexión cerrada por el servidor.\n");
     } else {
         printf("Error al recibir la respuesta del servidor: %d\n", WSAGetLastError());
     }
@@ -76,7 +76,7 @@ int main() {
             enviar_comando(ConnectSocket, comando);
             recibir_respuesta(ConnectSocket);
         } else if (opcion == 2) {
-            printf("Ingrese la longitud de la contraseÃ±a (entre 8 y 50): ");
+            printf("Ingrese la longitud de la contraseña (entre 8 y 50): ");
             scanf("%d", &longitud);
             getchar(); // Limpiar el buffer de entrada
 
@@ -92,7 +92,7 @@ int main() {
             printf("Saliendo...\n");
             break;
         } else {
-            printf("OpciÃ³n no vÃ¡lida.\n");
+            printf("Opción no válida.\n");
         }
     }
 

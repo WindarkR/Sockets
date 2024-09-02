@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1725218127 source:c:\users\agustin\desktop\nswitch\cliente\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<winsock2.h>
+
